@@ -3,7 +3,7 @@
 > Project description
 
 ```sh
-Replica of the REI store page's navigation bar and search functionality.
+Proxy server to connect all three components onto one page.
 ```
 
 ## Related Projects
