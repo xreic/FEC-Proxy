@@ -61,4 +61,11 @@ server.post('/api/cart/', (req, res) => {
     .catch((err) => res.status(400).send(err).end());
 });
 
+server.get('/item/:id', (req, res) => {
+  axios
+    .get(`http://localhost:3002/item/${req.params.id}`)
+    .then(({ data }) => res.status(200).send(data).end())
+    .catch((err) => res.status(400).send(err).end());
+});
+
 server.listen(port, () => console.log('Server initialized on port:', port));
